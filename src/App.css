@@ -1,0 +1,37 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.section {
+  padding: 10px;
+  background-image: url("https://vaults.metastreet.xyz/assets/illustrations/pixel-art/columns.png");
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  background-size: 100% auto;
+  background-position: center top 4rem;
+  background-color: rgb(246, 244, 250);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media (max-width: 400px) {
+  #root {
+    padding: 0 1rem;
+  }
+}
+
+.app-container {
+  display: flex;
+  height: 90vh;
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 15px;
+  }
+}
