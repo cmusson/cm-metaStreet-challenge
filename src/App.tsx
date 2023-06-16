@@ -7,7 +7,6 @@ import { ethers } from "ethers";
 import { BrowserProvider, Eip1193Provider } from "ethers/providers";
 import SideBar from "./components/SideBar";
 import NftGrid from "./components/NftGrid";
-import NftGrid2 from "./components/NftGrid2";
 
 interface NFTContract {
   address: string;
@@ -177,20 +176,7 @@ function App() {
           )}
         </div>
 
-        <NftGrid2 nfts={nfts} />
-
-        {/* <NftGrid
-          nfts={[
-            { src: "/vite.svg", address: "1234", id: 1 },
-            { src: "/vite.svg", address: "1235", id: 2 },
-            { src: "/vite.svg", address: "1236", id: 3 },
-            { src: "/vite.svg", address: "1237", id: 4 },
-            { src: "/vite.svg", address: "1238", id: 5 },
-            { src: "/vite.svg", address: "1239", id: 6 },
-            { src: "/vite.svg", address: "1231", id: 7 },
-            { src: "/vite.svg", address: "1232", id: 8 },
-          ]}
-        /> */}
+        <NftGrid nfts={nfts} />
       </section>
     </main>
   );

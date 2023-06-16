@@ -10,21 +10,6 @@ export const trimAddress = (address: string): string => {
   }
 };
 
-// not used yet
-export const copyAddress = (
-  address: string
-  // setIcon: Dispatch<SetStateAction<string>>
-) => {
-  // Copies to clipboard
-  navigator.clipboard.writeText(address);
-  //   setIcon("/copiedIcon.svg");
-
-  //   setTimeout(() => {
-  //     setIcon("/copyIcon.svg");
-  //   }, 1000);
-};
-
-// not used yet
 const openInNewTab = (address: string): void => {
   const newWindow = window.open(
     `https://etherscan.io/address/${address}`,
