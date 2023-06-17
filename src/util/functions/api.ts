@@ -15,7 +15,6 @@ export const fetchNFTs = async (
       console.error("NFT fetch error");
     }
     const data = await response.json();
-    console.log(data);
     const nfts = data.ownedNfts.map((nft: any) => {
       const src = nft.media[0].thumbnail
         ? nft.media[0].thumbnail
