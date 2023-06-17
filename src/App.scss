@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  height: 90vh;
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  #root {
+    padding: 0 1rem;
+  }
+}
