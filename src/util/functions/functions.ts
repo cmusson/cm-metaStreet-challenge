@@ -1,5 +1,3 @@
-import { Dispatch, SetStateAction } from "react";
-
 export const trimAddress = (address: string): string => {
   if (address.length < 10) {
     return address;
@@ -23,3 +21,12 @@ export const onClickUrl =
   (url: string): (() => void) =>
   () =>
     openInNewTab(url);
+
+export const allowTransfer = (
+  str1: string,
+  str2: string,
+  str3: string,
+  str4: string
+) => {
+  return str1 !== "" && str2 !== "" && str3 !== "" && str4 !== "";
+};
