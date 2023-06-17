@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { BrowserProvider, Eip1193Provider } from "ethers/providers";
-import "./App.css";
+import "./App.scss";
 import { INewNft } from "./util/interfaces";
 import SideBar from "./components/SideBar";
 import MainSection from "./components/MainSection";
