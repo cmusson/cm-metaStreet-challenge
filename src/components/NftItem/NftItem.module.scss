@@ -38,3 +38,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.address {
+  &:hover {
+    text-decoration: underline;
+  }
+}
